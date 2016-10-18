@@ -27,6 +27,7 @@
 -(void)addSysLog{
 
     NSLog(@"sys_log");
+    NSLog(@"second ");
 }
 
 @end
