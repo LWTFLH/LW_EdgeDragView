@@ -23,6 +23,7 @@
 		C98D67A61DB5FFA8000B678E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98D67A51DB5FFA8000B678E /* Assets.xcassets */; };
 		C98D67A91DB5FFA8000B678E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98D67A71DB5FFA8000B678E /* LaunchScreen.storyboard */; };
 		C98D67B01DB5FFDC000B678E /* LW_EdgeDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D67AF1DB5FFDC000B678E /* LW_EdgeDragView.m */; };
+		C98D67B71DB615CF000B678E /* TNViewControllerBranch3.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D67B61DB615CF000B678E /* TNViewControllerBranch3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		C98D67AA1DB5FFA8000B678E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C98D67AE1DB5FFDC000B678E /* LW_EdgeDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LW_EdgeDragView.h; sourceTree = "<group>"; };
 		C98D67AF1DB5FFDC000B678E /* LW_EdgeDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LW_EdgeDragView.m; sourceTree = "<group>"; };
+		C98D67B51DB615CF000B678E /* TNViewControllerBranch3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNViewControllerBranch3.h; sourceTree = "<group>"; };
+		C98D67B61DB615CF000B678E /* TNViewControllerBranch3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNViewControllerBranch3.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 				792710931D4C848600F29412 /* LW_EdgeDragView.h */,
 				792710941D4C848600F29412 /* LW_EdgeDragView.m */,
 				792710601D4C846100F29412 /* Supporting Files */,
+				C98D67B51DB615CF000B678E /* TNViewControllerBranch3.h */,
+				C98D67B61DB615CF000B678E /* TNViewControllerBranch3.m */,
 			);
 			path = DO_EdgeDragAnimation_Demo;
 			sourceTree = "<group>";
@@ -372,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98D67B71DB615CF000B678E /* TNViewControllerBranch3.m in Sources */,
 				792710951D4C848600F29412 /* LW_EdgeDragView.m in Sources */,
 				792710681D4C846100F29412 /* ViewController.m in Sources */,
 				792710651D4C846100F29412 /* AppDelegate.m in Sources */,
@@ -675,6 +681,7 @@
 				C98D67AC1DB5FFA8000B678E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
