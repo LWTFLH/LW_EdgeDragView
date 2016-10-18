@@ -14,10 +14,7 @@
 
     LW_EdgeDragView *edge;
 }
-//- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//
-//    NSLog(@"主视图");
-//}
+
 - (void)viewDidLoad {
 
     [super viewDidLoad];
@@ -27,6 +24,9 @@
     [self.view addSubview:ev];
     edge = ev;
 }
+-(void)addSysLog{
 
+    NSLog(@"sys_log");
+}
 
 @end
