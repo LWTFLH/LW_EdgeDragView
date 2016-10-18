@@ -7,13 +7,13 @@
 //
 
 #import "LW_EdgeDragView.h"
-#define H self.frame.size.height
-#define W self.frame.size.width
+#define H [UIScreen mainScreen].bounds.size.width
+#define W [UIScreen mainScreen].bounds.size.height
 @implementation LW_EdgeDragView
   CGFloat x;
   CGFloat y;
 
--(instancetype)initWithFrame:(CGRect)frame EdgeType:(LWEdgeType)edgetype
+-(instancetype)initWithFrame:(CGRect)frame EdgeType:(EdgeType)edgetype
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -46,7 +46,7 @@
     [_movePath removeAllPoints];
     [_originPath removeAllPoints];
     switch (_edgetype) {
-        case LWEdgeTypetop: {
+        case top: {
             if (point.y>160) {
                 point.y = 160;
             }
@@ -60,7 +60,7 @@
             
             break;
         }
-        case LWEdgeTypeleft: {
+        case left: {
             if (point.x>160) {
                 point.x = 160;
             }
@@ -73,7 +73,7 @@
             [_originPath addQuadCurveToPoint:CGPointMake(0, 0) controlPoint:point];
             break;
         }
-        case LWEdgeTypedown: {
+        case down: {
             if (point.y < H-160) {
                 point.y = H-160;
             }
@@ -86,7 +86,7 @@
             [_originPath addQuadCurveToPoint:CGPointMake(0, H) controlPoint:point];
             break;
         }
-        case LWEdgeTyperight: {
+        case right: {
             if (point.x < W-160) {
                 point.x = W-160;
             }

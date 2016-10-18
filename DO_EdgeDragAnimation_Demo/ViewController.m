@@ -9,17 +9,24 @@
 @end
 
 @implementation ViewController
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
-    NSLog(@"主视图");
+{
+
+    LW_EdgeDragView *edge;
 }
+//- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//
+//    NSLog(@"主视图");
+//}
 - (void)viewDidLoad {
 
     [super viewDidLoad];
     self.title = @"滑动";
-   LW_EdgeDragView *ev = [[LW_EdgeDragView alloc] initWithFrame:self.view.bounds EdgeType:right];
+   LW_EdgeDragView *ev = [[LW_EdgeDragView alloc] initWithFrame:self.view.bounds EdgeType:LWEdgeTyperight];
     ev.color = [UIColor cyanColor];
     [self.view addSubview:ev];
+    edge = ev;
 }
+
 
 @end
